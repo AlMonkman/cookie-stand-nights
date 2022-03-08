@@ -95,7 +95,7 @@ function renderFooter() {
   tr.appendChild(td);
 
   let grandTotal = 0;
-  
+
   for (let i = 0; i < hours.length; i++) {
     let hourlyTotal = 0;
 

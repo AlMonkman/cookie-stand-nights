@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  background-image: url(img/ocean-water.jpg);
+}
+
+h1 {
+  font-family: 'Staatliches', cursive;
+  font-size: 300%;
+}
+
+div {
+  display: flex;
+  justify-content: space-around;
+  margin: 8% 0% 8% 0%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  font-size: larger;
+  margin-bottom: 10%;
+}
+
+tr, th, td {
+  border: 2px black solid;
+  padding: 5px;
+  
+}
+
