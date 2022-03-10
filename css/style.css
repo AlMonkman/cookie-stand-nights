@@ -3,18 +3,35 @@
 }
 
 nav {
-  background-image: url(img/ocean-water.jpg);
+ background-color: salmon;
+ padding-top: 3px;
+ padding-bottom: 3px;
 }
 
 h1 {
   font-family: 'Staatliches', cursive;
   font-size: 300%;
+  margin-top: 2%;
+}
+
+main h1{
+  text-align: center;
+  margin-bottom: 10%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 div {
   display: flex;
   justify-content: space-around;
-  margin: 8% 0% 8% 0%;
+  margin: 8% 0% 2% 0%;
+  background-color: aqua;
+  border: 3px black inset;
+}
+  
+
+div img{
+width: 25%;
+
 }
 
 nav {
@@ -23,9 +40,24 @@ nav {
   margin-bottom: 10%;
 }
 
-main {
+a{
+  margin-top: 7px;
+}
+
+nav img{
+  width: 4%;
+  border: 1px black solid;
+}
+
+body{
+  background-color: skyblue;
+  border: 10px salmon inset;
+}
+
+#Table {
   display: flex;
   justify-content: center;
+  
 }
 
 table {
@@ -39,3 +71,51 @@ tr, th, td {
   
 }
 
+article{
+  margin-bottom: 5%;
+  border: 3px black solid;
+  margin-right: 55%;
+  margin-left: 2%;
+  background-color: lightblue;
+}
+
+h2 {
+  font-size: 250%;
+  font-style: underline;
+  margin: auto auto 2% 1%;
+}
+h3 {
+  font-size: 150%;
+  margin: auto auto 1% 1%;
+}
+
+li{
+  margin: 2% auto 2% 5%;
+  font-size: 125%;
+}
+
+main img {
+  float: right;
+  margin-right: 5%;
+  border: 3px black solid;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  border: 10px salmon inset;
+  padding: 3%;
+}
+
+footer img{
+  border: 3px black solid;
+}
+
+#shirt {
+width: 300px;
+height: 400px;
+}
+
+#family{
+  width: 600px;
+}
