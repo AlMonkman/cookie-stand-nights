@@ -2,6 +2,8 @@
 
 const citySales = document.getElementById('city-sales');
 
+const cityForm = document.getElementById('addCity');
+
 const hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
 
 const cityArr = [];
@@ -86,8 +88,10 @@ function callout() {
 
 callout();
 
+let tr = document.createElement('tr');
+
 function renderFooter() {
-  let tr = document.createElement('tr');
+  
   citySales.appendChild(tr);
 
   let td = document.createElement('td');
@@ -116,7 +120,24 @@ function renderFooter() {
 
 renderFooter();
 
+function handleSubmit(event) {
+  event.preventDefault();
 
+  let name = event.target.cityName.value;
+  let minimum = +event.target.minimum.value;
+  let maximum = +event.target.maximum.value;
+  let average = +event.target.average.value;
+
+  let newCity = new City(name, minimum, maximum, average);
+  tr.innerHTML = '';
+  newCity.randomCustomers();
+  newCity.generateCookiesPerHour();
+  newCity.renderCity();
+  renderFooter();
+
+}
+
+cityForm.addEventListener('submit', handleSubmit);
 // console.log(seattle);
 // console.log(cityArr);
 
