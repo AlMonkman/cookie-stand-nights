@@ -12,6 +12,7 @@ h1 {
   font-family: 'Staatliches', cursive;
   font-size: 300%;
   margin-top: 2%;
+  color: darkred;
 }
 
 main h1{
@@ -63,12 +64,14 @@ body{
 table {
   font-size: larger;
   margin-bottom: 10%;
+  background-color: antiquewhite;
 }
 
 tr, th, td {
   border: 2px black solid;
   padding: 5px;
-  
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  color: darkslategray;
 }
 
 article{
@@ -129,9 +132,19 @@ p{
 label{
   display: block;
   margin-bottom: 1%;
+  margin-left: 4%;
 }
 
 legend{
   margin-bottom: 1%;
   font-size: larger;
+  margin-left: 2%;
+}
+
+input{
+  margin-left: 4%;
+}
+
+button{
+  margin: 1% 0 2% 13%;
 }
